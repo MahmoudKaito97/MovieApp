@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:listDivider">@color/colorDivider</item>
+        <item name="android:windowBackground">@color/colorIcons</item>
+        <item name="android:textColorAlertDialogListItem">@color/colorPrimaryText</item>
+        <item name="android:itemBackground">@color/colorIcons</item>
+    </style>
+
+
+    <style name="AppThemeSecond" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="android:itemBackground">@color/colorIcons</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:listDivider">@color/colorDivider</item>
+        <item name="android:windowBackground">@color/colorIcons</item>
+        <item name="android:textColorAlertDialogListItem">@color/colorPrimaryText</item>
+
+    </style>
+
+
+
+
+
+
+</resources>

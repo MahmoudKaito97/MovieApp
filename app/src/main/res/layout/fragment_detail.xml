@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.mahmoud.movieapp.DetailFragment"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="80dp"
+       android:gravity="center"
+       android:id="@+id/title"
+       android:textColor="@color/colorIcons"
+       android:background="#607D8B"
+       android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="8dp"
+
+       >
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/poster"
+
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:paddingTop = "8dp"
+          android:paddingLeft="8dp">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/release_date"
+             android:paddingBottom="8dp"
+             android:paddingLeft="10dp"
+             android:textSize="16sp"
+             android:textColor="#666666"
+
+
+             />
+         <RatingBar
+             android:id="@+id/rating_bar"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             style="?android:attr/ratingBarStyleIndicator"
+             android:numStars="5"
+             android:stepSize="0.05"
+             android:clickable="false"
+             android:focusable="false"
+             android:isIndicator="true"
+             android:paddingBottom="8dp"
+             />
+
+         <TextView
+
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/rating"
+             android:paddingLeft="10dp"
+               android:paddingBottom="8dp"
+             android:textSize="16sp"
+             android:textColor="#666666"
+             />
+         <com.sackcentury.shinebuttonlib.ShineButton
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:layout_centerInParent="true"
+             android:src="@android:color/darker_gray"
+             android:id="@+id/shine_button"
+             app:btn_color="@android:color/darker_gray"
+             app:btn_fill_color="#F44336"
+             app:allow_random_color="true"
+             app:enable_flashing="true"
+             app:big_shine_color="#FDD835"
+             app:click_animation_duration="200"
+             app:shine_animation_duration="1500"
+             app:shine_turn_angle="20"
+             app:small_shine_offset_angle="20"
+             app:small_shine_color="#CC9999"
+             app:shine_count="15"
+             android:layout_marginLeft="10dp"
+             app:siShape="@raw/heart"/>
+      </LinearLayout>
+
+   </LinearLayout>
+   <TextView
+       android:paddingLeft="8dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/overview"
+       android:textSize="16sp"
+       android:textColor="#666666"/>
+
+   <android.support.v7.widget.RecyclerView
+       android:paddingBottom="4dp"
+       android:id="@+id/trailer_recyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       />
+   <android.support.v7.widget.RecyclerView
+       android:paddingBottom="4dp"
+       android:id="@+id/review_recyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+</ScrollView>
